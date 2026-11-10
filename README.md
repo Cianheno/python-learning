@@ -1,3 +1,9 @@
+markdown
 # python-learning
-# this repository is intended to hold python practice projects which fall in line with my AI diploma
-# Project 1: A simple cafe receipt which adds up totals of items, displays vat and shows a see you soon message.
+
+Python practice projects completed alongside my Level 7 Diploma in
+AI and Working into the Future at CCT College Dublin.
+
+## Projects
+
+### 1. Café reciept
