@@ -1,0 +1,45 @@
+#README:  The objective of this project is to create a receipt for a café. The receipt should include the café's name on
+# top of the paper, the product item on the left side with corresponding price on the right.
+# At the bottom there should be net cost of the items excluding vat, Vat which displays the how much vat is on items and then a grand total.
+# Under that there should be a section which reads Thanks, see you soon. The items will be a flat white, a scone and oat milk.
+# tThe objective is to learn variables, numbers (int vs float), print() and f strings.
+# :.2f is a formatting instruction which goes into the curly brackets of an f string. It tells python how to display the number
+# for instance this instruction is telling python to display 2 numbers after the decimal point.
+
+cafe_name = 'Café 1 Carlow'
+
+fw_name = 'Flat White'
+fw_price = 4.10
+fw_qty= 2
+fw_total = fw_price * fw_qty
+
+scone_name = 'Scone'
+scone_price = 3.25
+scone_qty = 1
+scone_total = scone_price * scone_qty
+
+oat_name = 'Oat Milk'
+oat_price = 0.60
+oat_qty = 1
+oat_total = oat_qty * oat_price
+
+total = fw_total + scone_total + oat_total
+vat_rate = 0.095
+net = total / (1 + vat_rate)
+vat = total - net
+
+
+
+print(f'====== {cafe_name} ======')
+print(f'{fw_qty} x {fw_name}             €{fw_total:.2f}')
+print(f'{scone_qty} x {scone_name}                  €{scone_total:.2f}')
+print(f'{oat_qty} x {oat_name}               €{oat_total:.2f}')
+print('===========================')
+print(f'NET                        €{net:.2f}')
+print(f'VAT                        €{vat:.2f}')
+print(f'TOTAL                      €{total:.2f}')
+print('-' * 27)
+print('Thanks, see you soon!')
+
+
+#a couple of errors that were reoccurring. Not putting strings into ''. 
